@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9F318211E40539E00CFC63F /* MotionAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F318171E40539E00CFC63F /* MotionAnimation.framework */; };
-		E9F318261E40539E00CFC63F /* MotionAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F318251E40539E00CFC63F /* MotionAnimationTests.swift */; };
 		E9F318281E40539E00CFC63F /* MotionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F3181A1E40539E00CFC63F /* MotionAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9F318381E4053A600CFC63F /* MotionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F318311E4053A600CFC63F /* MotionAnimation.swift */; };
 		E9F318391E4053A600CFC63F /* MotionAnimationPropertyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F318321E4053A600CFC63F /* MotionAnimationPropertyState.swift */; };
@@ -19,21 +17,10 @@
 		E9F3183E1E4053A600CFC63F /* ValueAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F318371E4053A600CFC63F /* ValueAnimation.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E9F318221E40539E00CFC63F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F3180E1E40539E00CFC63F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9F318161E40539E00CFC63F;
-			remoteInfo = MotionAnimation;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		E9F318171E40539E00CFC63F /* MotionAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MotionAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F3181A1E40539E00CFC63F /* MotionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionAnimation.h; sourceTree = "<group>"; };
 		E9F3181B1E40539E00CFC63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9F318201E40539E00CFC63F /* MotionAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F318251E40539E00CFC63F /* MotionAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationTests.swift; sourceTree = "<group>"; };
 		E9F318271E40539E00CFC63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F318311E4053A600CFC63F /* MotionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionAnimation.swift; sourceTree = "<group>"; };
@@ -53,14 +40,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9F3181D1E40539E00CFC63F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9F318211E40539E00CFC63F /* MotionAnimation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				E9F318171E40539E00CFC63F /* MotionAnimation.framework */,
-				E9F318201E40539E00CFC63F /* MotionAnimationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,24 +117,6 @@
 			productReference = E9F318171E40539E00CFC63F /* MotionAnimation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E9F3181F1E40539E00CFC63F /* MotionAnimationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9F3182E1E40539E00CFC63F /* Build configuration list for PBXNativeTarget "MotionAnimationTests" */;
-			buildPhases = (
-				E9F3181C1E40539E00CFC63F /* Sources */,
-				E9F3181D1E40539E00CFC63F /* Frameworks */,
-				E9F3181E1E40539E00CFC63F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E9F318231E40539E00CFC63F /* PBXTargetDependency */,
-			);
-			name = MotionAnimationTests;
-			productName = MotionAnimationTests;
-			productReference = E9F318201E40539E00CFC63F /* MotionAnimationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,14 +129,8 @@
 				TargetAttributes = {
 					E9F318161E40539E00CFC63F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = U2H7C9VHM5;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
-					};
-					E9F3181F1E40539E00CFC63F = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = U2H7C9VHM5;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -193,20 +147,12 @@
 			projectRoot = "";
 			targets = (
 				E9F318161E40539E00CFC63F /* MotionAnimation */,
-				E9F3181F1E40539E00CFC63F /* MotionAnimationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9F318151E40539E00CFC63F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9F3181E1E40539E00CFC63F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,23 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9F3181C1E40539E00CFC63F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9F318261E40539E00CFC63F /* MotionAnimationTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E9F318231E40539E00CFC63F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E9F318161E40539E00CFC63F /* MotionAnimation */;
-			targetProxy = E9F318221E40539E00CFC63F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E9F318291E40539E00CFC63F /* Debug */ = {
@@ -354,7 +284,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U2H7C9VHM5;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -375,7 +305,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U2H7C9VHM5;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -385,32 +315,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = info.cokr.MotionAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		E9F3182F1E40539E00CFC63F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = U2H7C9VHM5;
-				INFOPLIST_FILE = MotionAnimationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.cokr.MotionAnimationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		E9F318301E40539E00CFC63F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = U2H7C9VHM5;
-				INFOPLIST_FILE = MotionAnimationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.cokr.MotionAnimationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -434,14 +338,7 @@
 				E9F3182D1E40539E00CFC63F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		E9F3182E1E40539E00CFC63F /* Build configuration list for PBXNativeTarget "MotionAnimationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9F3182F1E40539E00CFC63F /* Debug */,
-				E9F318301E40539E00CFC63F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
